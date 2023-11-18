@@ -20,4 +20,8 @@ public class InformacaoService {
 	public Informacao incluir(Informacao informacao) {
 		return informacaoRepository.save(informacao);
 	}
+	
+	public void excluir(Integer id) {
+		informacaoRepository.deleteById(id);
+	}
 }
